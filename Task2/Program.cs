@@ -20,6 +20,30 @@ namespace Task2
     {
         static void Main(string[] args)
         {
+            Kitten kitten = new Kitten();
+            kitten.Name = "Test Kitten";
+            kitten.Age = 4;
+            kitten.FurColor = "white";
+            kitten.EyesColor = "yellow";
+            kitten.Meow(3);
+
+            Console.ReadLine();
+        }
+
+        class Kitten
+        {
+            public string Name { get; set; }
+            public int Age { get; set; }
+            public string FurColor { get; set; }
+            public string EyesColor { get; set; }
+
+            public void Meow(int times)
+            {
+                for (int i = 0;i < times; i++)
+                {
+                    Console.WriteLine("Meow");
+                }                
+            }
         }
     }
 }
