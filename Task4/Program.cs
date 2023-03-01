@@ -23,6 +23,39 @@ namespace Task4
     {
         static void Main(string[] args)
         {
+            Triangle Triangle = new Triangle();
+            Triangle.SideA = 10.2;
+            Triangle.SideB = 8.5;
+            Triangle.SideC = 13;
+            Triangle.ShowInfo();
+
+            Console.ReadKey();
+        }
+    }
+
+    class Triangle
+    {
+        public double SideA { get; set; }
+
+        public double SideB { get; set; }
+
+        public double SideC { get; set; }
+
+        private double Square()
+        {
+            double halfPerimeter = Perimeter() / 2;
+            return Math.Sqrt(halfPerimeter * (halfPerimeter - SideA) * (halfPerimeter - SideB) * (halfPerimeter - SideC));
+        }
+
+        private double Perimeter()
+        {
+            return SideA + SideB + SideC;
+        }
+
+        public void ShowInfo()
+        {
+            Console.WriteLine($"Square is {Math.Round(Square(), 2)} m2");
+            Console.WriteLine($"Perimeter is {Math.Round(Perimeter(), 2)} m2");
         }
     }
 }

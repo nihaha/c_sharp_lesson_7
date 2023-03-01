@@ -1,0 +1,8 @@
+D:\!c_sharp\Solutions\c-_lesson_7\Solution\Task4\bin\Debug\Task4.exe.config
+D:\!c_sharp\Solutions\c-_lesson_7\Solution\Task4\bin\Debug\Task4.exe
+D:\!c_sharp\Solutions\c-_lesson_7\Solution\Task4\bin\Debug\Task4.pdb
+D:\!c_sharp\Solutions\c-_lesson_7\Solution\Task4\obj\Debug\Task4.csproj.AssemblyReference.cache
+D:\!c_sharp\Solutions\c-_lesson_7\Solution\Task4\obj\Debug\Task4.csproj.SuggestedBindingRedirects.cache
+D:\!c_sharp\Solutions\c-_lesson_7\Solution\Task4\obj\Debug\Task4.csproj.CoreCompileInputs.cache
+D:\!c_sharp\Solutions\c-_lesson_7\Solution\Task4\obj\Debug\Task4.exe
+D:\!c_sharp\Solutions\c-_lesson_7\Solution\Task4\obj\Debug\Task4.pdb

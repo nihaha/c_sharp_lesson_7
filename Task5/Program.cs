@@ -26,6 +26,52 @@ namespace Task5
     {
         static void Main(string[] args)
         {
+            Point pointA = new Point(-2, 4, "pointA");
+            Point pointB = new Point(5, 2, "pointB");
+            Point pointC = new Point(3, -3, "pointC");
+
+            Figure figureT = new Figure(pointA, pointB, pointC, "triangle");
+            Figure figureS = new Figure(pointA, pointB, pointC, "square");
+            Figure figureR = new Figure(pointA, pointB, pointC, "rectangle");
+
+            Console.ReadKey();
         }
+    }
+
+    class Point
+    {
+        private double x;
+
+        private double y;
+
+        private string pointName;
+
+        public Point(double x, double y, string pointName)
+        {
+            this.x = x;
+            this.y = y;
+            this.pointName = pointName;
+        }
+
+        public double X { get { return x; } set { x = value; } }
+
+        public double Y { get { return y; } set { y = value; } }
+
+        public string PointName { get { return pointName; } set { pointName = value; } }
+    }
+
+    class Figure
+    {
+        private Point[] points;
+
+        private string figureName;
+
+        public Figure(Point pointA, Point pointB, Point pointC, string figureName)
+        {
+            this.points = new Point[]{ pointA, pointB, pointC };
+            this.figureName = figureName;
+        }
+
+        public Point[] Points { get {  return points; } }
     }
 }
