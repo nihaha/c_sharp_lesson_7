@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -29,10 +30,18 @@ namespace Task5
             Point pointA = new Point(-2, 4, "pointA");
             Point pointB = new Point(5, 2, "pointB");
             Point pointC = new Point(3, -3, "pointC");
+            Point pointD = new Point(-2, -5, "pointD");
 
-            Figure figureT = new Figure(pointA, pointB, pointC, "triangle");
-            Figure figureS = new Figure(pointA, pointB, pointC, "square");
-            Figure figureR = new Figure(pointA, pointB, pointC, "rectangle");
+            Figure triangle = new Figure(pointA, pointB, pointC);
+            Figure square = new Figure(pointA, pointB, pointC, pointD);
+            Figure rectangle = new Figure(pointA, pointB, pointC, pointD);
+            triangle.FigureName = "triangle";
+            square.FigureName = "square";
+            rectangle.FigureName = "rectangle";
+
+            Console.WriteLine($"Perimeter of {triangle.FigureName} equals to {Math.Round(triangle.Perimeter(), 2)} m");
+            Console.WriteLine($"Perimeter of {square.FigureName} equals to {Math.Round(square.Perimeter(), 2)} m");
+            Console.WriteLine($"Perimeter of {rectangle.FigureName} equals to {Math.Round(rectangle.Perimeter(), 2)} m");
 
             Console.ReadKey();
         }
@@ -66,12 +75,35 @@ namespace Task5
 
         private string figureName;
 
-        public Figure(Point pointA, Point pointB, Point pointC, string figureName)
+        public Figure(Point pointA, Point pointB, Point pointC)
         {
             this.points = new Point[]{ pointA, pointB, pointC };
-            this.figureName = figureName;
+        }
+
+        public Figure(Point pointA, Point pointB, Point pointC, Point pointD)
+        {
+            this.points = new Point[] { pointA, pointB, pointC, pointD };
         }
 
         public Point[] Points { get {  return points; } }
+
+        public string FigureName { get; set; }
+
+        private double Length(Point pointA, Point pointB)
+        {
+            return Math.Sqrt(Math.Pow((pointA.X - pointA.Y), 2) + Math.Pow((pointB.X - pointB.Y), 2));
+        }
+
+        public double Perimeter()
+        {
+            double perimeter = 0;
+
+            for (int i = 1; i < points.Length; i++)
+            {
+                perimeter += Length(points[i], points[i - 1]);
+            }
+
+            return perimeter;
+        }
     }
 }

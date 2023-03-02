@@ -6,3 +6,11 @@ D:\!c_sharp\Solutions\c-_lesson_7\Solution\Task5\obj\Debug\Task5.csproj.Suggeste
 D:\!c_sharp\Solutions\c-_lesson_7\Solution\Task5\obj\Debug\Task5.csproj.CoreCompileInputs.cache
 D:\!c_sharp\Solutions\c-_lesson_7\Solution\Task5\obj\Debug\Task5.exe
 D:\!c_sharp\Solutions\c-_lesson_7\Solution\Task5\obj\Debug\Task5.pdb
+D:\!c_sharp\Solution7\c_sharp_lesson_7\Task5\bin\Debug\Task5.exe.config
+D:\!c_sharp\Solution7\c_sharp_lesson_7\Task5\bin\Debug\Task5.exe
+D:\!c_sharp\Solution7\c_sharp_lesson_7\Task5\bin\Debug\Task5.pdb
+D:\!c_sharp\Solution7\c_sharp_lesson_7\Task5\obj\Debug\Task5.csproj.AssemblyReference.cache
+D:\!c_sharp\Solution7\c_sharp_lesson_7\Task5\obj\Debug\Task5.csproj.SuggestedBindingRedirects.cache
+D:\!c_sharp\Solution7\c_sharp_lesson_7\Task5\obj\Debug\Task5.csproj.CoreCompileInputs.cache
+D:\!c_sharp\Solution7\c_sharp_lesson_7\Task5\obj\Debug\Task5.exe
+D:\!c_sharp\Solution7\c_sharp_lesson_7\Task5\obj\Debug\Task5.pdb
